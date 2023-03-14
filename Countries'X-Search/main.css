@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+}
+
+#wrapper{
+    max-width: 1300px;
+    height: 100vh;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-section{
+    padding: 30px;
+    width: 40%;
+    height: 30vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wtf-country{
+    font-size: 2.2rem;
+}
+
+input#country{
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    margin: 20px 0px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output-section{
+    padding: 20px;
+    width: 40%;
+    height: 24vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: none;
+    /* make animation when display block */
+    animation: slide 1s ease-in-out;
+}
+
+h4.city-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+p.coutries-name{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+p.population-number{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
